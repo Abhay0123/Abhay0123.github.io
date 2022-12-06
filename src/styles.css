@@ -1,0 +1,138 @@
+* {
+  margin: "0";
+  padding: "0";
+  text-decoration: none;
+  /* color: black;
+  background-color: white; */
+  /* color: white;
+  background-color: black; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+}
+.nav-menu {
+  display: flex;
+}
+.nav-menu a {
+  gap: 10px;
+  padding: 0 3rem;
+  font-size: larger;
+}
+
+.bimenu {
+  display: none;
+}
+.logo {
+  width: 45px;
+  border-radius: 80%;
+}
+@media screen and (max-width: 1040px) {
+  .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .nav-menu li {
+    padding: 0.1rem;
+  }
+  .nav-menu li a {
+    font-size: 2rem;
+  }
+  .bimenu {
+    display: block;
+  }
+  .logo {
+    width: 40px;
+    border-radius: 80%;
+  }
+}
+.text {
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(0, 225, 255), red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.about,
+.project,
+.earns {
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(0, 225, 255), red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin: 60px;
+  margin-top: 40px;
+}
+.rotate {
+  background-color: black;
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+p {
+  background-color: black;
+  color: white;
+  font: 400 15px/1.8 "dancing script" cursive;
+}
+p:hover {
+  color: cyan;
+  transition: 2s;
+  transform: rotateY(360deg);
+}
+/* Card Flip */
+.container {
+  width: 500px;
+  height: 300px;
+  perspective: 800px;
+  border-radius: 20px;
+}
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 2000ms;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.back {
+  background: linear-gradient(55deg, rgb(0, 225, 255), red);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.certificate > div {
+  border: 2px solid black;
+}
