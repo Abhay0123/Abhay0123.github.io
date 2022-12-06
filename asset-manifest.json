@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.d7834cc5.js",
-    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.7a9e05d6.css",
+    "main.js": "/static/js/main.a397c214.js",
+    "static/media/CSS.png": "/static/media/CSS.d51352b283b7f2270b15.png",
+    "static/media/Zmc.jpg": "/static/media/Zmc.500b681ccc7e051c0458.jpg",
+    "static/media/Jiomart.png": "/static/media/Jiomart.30574a2f63e8c8911656.png",
+    "static/media/MySelf.jpg": "/static/media/MySelf.c715d98c7183bd672bcb.jpg",
+    "static/media/JsBasic.jpg": "/static/media/JsBasic.1fb3775945f819b53577.jpg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.d7834cc5.js.map": "/static/js/main.d7834cc5.js.map",
-    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+    "main.7a9e05d6.css.map": "/static/css/main.7a9e05d6.css.map",
+    "main.a397c214.js.map": "/static/js/main.a397c214.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.d7834cc5.js"
+    "static/css/main.7a9e05d6.css",
+    "static/js/main.a397c214.js"
   ]
 }
