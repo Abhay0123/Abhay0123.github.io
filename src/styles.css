@@ -38,11 +38,15 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
+   
     left: -100%;
     z-index: -1;
     transition: 0.6s;
+  
+  }
+  .header{
+    position:fixed;
+    top: 0;
   }
   .nav-menu.active {
     left: 0;
@@ -67,15 +71,21 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.landingPage{
+  background-image: url("https://cdn3d.iconscout.com/3d/premium/thumb/man-working-in-office-4938654-4122865.png");
+  width: 500px;
+  height: 450px; 
+  
+}
 .about,
 .project,
-.earns {
+.earns{
   font-family: sans-serif;
   background: linear-gradient(to right, rgb(0, 225, 255), red);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin: 60px;
-  margin-top: 40px;
+   margin-top: 80px;
+   margin-left: 40px;
 }
 .rotate {
   background-color: black;
@@ -95,8 +105,8 @@ p:hover {
 }
 /* Card Flip */
 .container {
-  width: 500px;
-  height: 300px;
+  width: 600px;
+  height: 400px;
   perspective: 800px;
   border-radius: 20px;
 }
@@ -135,4 +145,14 @@ p:hover {
 
 .certificate > div {
   border: 2px solid black;
+}
+.bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact>Box:hover{
+   background-color: red;
+   color: red;
+   cursor: pointer;
 }

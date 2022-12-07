@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div className="App" style={theme === "Dark" ? style.Dark : style.Light}>
-      <Navbar />
+      <Navbar/>
       <AllRoutes />
     </div>
   );

@@ -5,7 +5,7 @@ import { Text, Box,Icon } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { useState, useContext } from "react";
 import Menubar from "./Chakras";
-//import logo_portfolio from "./logo_portfolio.jpg";
+
 
 import { AppContext } from "../Theme/ThemeContextProvider";
 const Navbar = () => {
@@ -16,23 +16,7 @@ const Navbar = () => {
   };
   return (
     <div className="header">
-      {/* <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "black"
-        }}
-      >
-        <img src={logo_portfolio} width="16%" className="logo" alt="logo" />
-
-        <Link to="/">
-          <Text className="text" fontSize="2xl" as="b">
-            Abhay Kumar
-          </Text>
-        </Link>
-      </div> */}
-      <ul className={clickMenu ? "nav-menu active" : "nav-menu"}>
+     <ul className={clickMenu ? "nav-menu active" : "nav-menu"}>
         <Link to="/">
           {" "}
           <Box className="rotate">
@@ -83,7 +67,7 @@ const Navbar = () => {
           <Box onClick={handleClick} size={30} style={{ color: "white" }} />
         ) : (
           <Menubar onClick={handleClick} />
-          // <BiMenu onClick={handleClick} size={30} style={{ color: "white" }} />
+       
         )}
       </div>
     </div>

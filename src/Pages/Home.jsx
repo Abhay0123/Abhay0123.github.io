@@ -1,5 +1,11 @@
 import { SimpleGrid, Box, Text, Image, Icon, Button,Heading } from "@chakra-ui/react";
+import {FaHome,FaHandHoldingHeart} from "react-icons/fa"
+import {BsHeartFill} from "react-icons/bs"
 
+import {AiOutlineTrademarkCircle} from "react-icons/ai"
+
+import {BsFillTelephoneFill} from "react-icons/bs"
+import {MdAttachEmail} from "react-icons/md"
 import { ImLinkedin, ImFolderDownload } from "react-icons/im";
 import MySelf from "./MySelf.jpg";
 import GitHubCalendar from "react-github-calendar";
@@ -77,17 +83,14 @@ const Home = () => {
         </Button>
 
       </Box>
-      {/* <Box padding="50px"> */}
-        <Image
-          boxSize="500px"
-          src="https://cdn3d.iconscout.com/3d/premium/thumb/man-working-in-office-4938654-4122865.png"
-          alt="Animated Image"
-        />
-      {/* </Box> */}
+      <Box className='landingPage'>
+     
+      </Box>
     </SimpleGrid>
+    <Box w='100%' h='5px' bg='black'></Box>
      {/* About me section */}
     <>
-      <Text className="about" fontSize="5xl" as="b">
+      <Text className="about" fontSize="5xl" as="b" >
         About me
       </Text>
       <SimpleGrid columns={2} spacing={10}>
@@ -102,26 +105,19 @@ const Home = () => {
         </Box>
         <Box> </Box>
       </SimpleGrid>
-      <Heading className="text">GitHub Status</Heading>
-      {/* <Box
-        widht="700px"
-        height="300px"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        border="1px solid red"
-      >
-        <Github />
-      </Box> */}
+      <Heading className="about">GitHub Status</Heading>
+      
     </>
 {/* github status */}
-<GitHubCalendar
+<Box display='flex' justifyContent='center' alignItems='center'>
+  <GitHubCalendar
         username="Abhay0123"
         blockSize={15}
         blockMargin={5}
         color="red"
         fontSize={16}
-      />
+      /></Box>
+
       {/* projects */}
      
 
@@ -130,7 +126,7 @@ const Home = () => {
       <Text className="project" marginLeft="60px" as="b" fontSize="5xl">
         Some Projects I've worked on
       </Text>
-      <SimpleGrid columns={2} spacing={40} padding="60px">
+      <SimpleGrid columns={2} spacing={20} padding="60px">
         <Box className="container" boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px">
           <Box className="card">
             <Box className="front">
@@ -251,8 +247,7 @@ const Home = () => {
                 </Text>
               </Box>
               <Box mt="20px">
-                {/* <Github />
-                <ExternalLink /> */}
+              
               </Box>
             </Box>
           </Box>
@@ -266,9 +261,9 @@ const Home = () => {
         Certificates
       </Text>
       <SimpleGrid
-        columns={[2, null, 2]}
-        spacing="40px"
-        padding="60px"
+        columns={[1, null, 3]}
+        spacing="20px"
+        padding="30px"
         className="certificate"
       >
         <Box>
@@ -305,7 +300,7 @@ const Home = () => {
        
       </Box>
 
-      <SimpleGrid spacing={10} columns={{ sm: 1, md: 1, lg: 2 }}>
+      <SimpleGrid spacing={10} columns={{ sm: 1, md: 1, lg: 2 }} className="form">
         <Box
           backgroundImage="https://harshgoel.me/images/vectors/contact/.svg"
           fontSize="large"
@@ -315,18 +310,20 @@ const Home = () => {
           alignItems="center"
           height="200px"
           mt="100px"
+          className='contact'
         >
-          <Box>Patna,Bihar,India</Box>
-          <Box>pathakabhay038@gmail.com </Box>
-          <Box>9932108062</Box>
-          <Box>Abhay Pathak</Box>
+          <Box as='b' fontSize='25px' display='flex' justifyContent='left' alignItems='center' gap='6px'><FaHome/>   Patna,Bihar,India</Box>
+         <a href="mailto:pathakabhay038@gmail.com"><Box as='b' fontSize='25px' display='flex' justifyContent='left' alignItems='center' gap='6px'> <MdAttachEmail/> pathakabhay038@gmail.com </Box></a> 
+          <Box as='b' fontSize='25px' display='flex' justifyContent='left' alignItems='center' gap='6px'><BsFillTelephoneFill/> <a href="tel:9932108062">9932108062</a></Box>
+         <a href='https://www.linkedin.com/in/abhay-pathak-791b18209/'><Box as='b' fontSize='25px' display='flex' justifyContent='left' alignItems='center' gap='6px'><ImLinkedin/>  Abhay Pathak</Box></a>
+          
        
         </Box>
-        <Box className="form">
+        <Box >
           <Container>
             <FormControl method="POST" action="https://formspree.io/f/myyvodko">
            
-              <Text fontSize="3xl" as="b" gap='10px'>
+              <Text fontSize="3xl" as="b">
                 Contact Us
               </Text>
               <Input
@@ -336,7 +333,7 @@ const Home = () => {
                 variant="filled"
                 autoComplete="off"
                 placeholder="Enter Your Name"
-                mb='10px'
+                mb='14px'
                 required
               />
               <Input
@@ -345,6 +342,7 @@ const Home = () => {
                 variant="filled"
                 autoComplete="off"
                 placeholder="Enter your Email"
+                mb='14px'
                 required
               />
               <Input
@@ -353,6 +351,7 @@ const Home = () => {
                 boxShadow="base"
                 variant="filled"
                 placeholder="Enter your mobile number"
+                mb='14px'
                 required
               />
               <Textarea
@@ -360,9 +359,10 @@ const Home = () => {
                 variant="filled"
                 placeholder="Enter Your Message"
                 autoComplete="off"
+                mb='14px'
                 required
               />
-              <Button colorScheme="cyan" type="submit">
+              <Button colorScheme="cyan" type="submit" color='white'>
                 Send
               </Button>
             </FormControl>
@@ -370,8 +370,11 @@ const Home = () => {
         </Box>
       </SimpleGrid>
     </Box>
+{/* Footer */}
+<Box width='100%' height='60px' bg='black' className='bottom'>
+   <Text color='white' as='b' display='flex' justifyContent='left' alignItems='center' gap='6px' ><AiOutlineTrademarkCircle fontSize='23px' /> 2022 Designed and Built by Abhay with <BsHeartFill/></Text>
 
-
+</Box>
 
   </>
   );
