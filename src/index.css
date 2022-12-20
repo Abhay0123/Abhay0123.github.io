@@ -1,13 +1,202 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.header {
+  position: sticky;
+  top: 0;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+* {
+  margin: "0";
+  padding: "0";
+  text-decoration: none;
+  font-style:oblique;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100px;
+  background-color: black !important;
+  z-index: 1;
+}
+.nav-menu {
+  display: flex;
+}
+.nav-menu a {
+  gap: 10px;
+  padding: 0 3rem;
+  font-size: larger;
+}
+
+.bimenu {
+  display: none;
+}
+.logo {
+  width: 45px;
+  border-radius: 80%;
+}
+@media screen and (max-width: 1040px) {
+  .nav-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    left: -100%;
+    z-index: -1;
+    transition: 0.6s;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .header >Box:hover{
+     cursor: pointer;
+  }
+  .nav-menu li {
+    padding: 0.1rem;
+  }
+  .nav-menu li a {
+    font-size: 2rem;
+  }
+  .bimenu {
+    display: block;
+  }
+  .logo {
+    width: 40px;
+    border-radius: 80%;
+  }
+}
+.text {
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(0, 225, 255), red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.landingPage {
+  background-image: url("https://cdn3d.iconscout.com/3d/premium/thumb/man-working-in-office-4938654-4122865.png");
+  width: 500px;
+  height: 450px;
+  margin: auto;
+}
+.about,
+.tech,
+.project,
+.earns {
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(0, 225, 255), red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-top: 80px;
+}
+.rotate {
+  background-color: black;
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+p {
+  background-color: black;
+  color: white;
+  font: 400 15px/1.8 "dancing script" cursive;
+}
+p:hover {
+  color: cyan;
+  transition: 2s;
+  transform: rotateY(360deg);
+}
+/* Card Flip */
+.container {
+  perspective: 800px;
+  border-radius: 20px;
+}
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 2000ms;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.back {
+  background: linear-gradient(55deg, rgb(0, 225, 255), red);
+  transform: rotateY(180deg);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.certificate > div {
+  border: 2px solid black;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact > div:hover {
+  
+  color: red;
+  /* cursor: pointer; */
+}
+.tech > Box {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.hover:hover {
+  cursor: pointer;
+  background: linear-gradient(55deg, red, rgb(0, 225, 255));
+}
+.myself > img:hover {
+  border-radius: 50%;
+  cursor: pointer;
+    box-shadow: rgba(26, 189, 201, 0.815) 0px 22px 70px 4px;
+}
+.bottom:hover{
+  background: linear-gradient(55deg, rgb(0, 225, 255), red);
+  cursor: pointer;
+  transform:scale(1.01);
+  border-radius:30px;
 }
