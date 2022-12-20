@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d59f3011.css",
-    "main.js": "/static/js/main.871ea754.js",
+    "main.css": "/static/css/main.8e11bcec.css",
+    "main.js": "/static/js/main.5926c3c7.js",
     "static/media/CSS.png": "/static/media/CSS.d51352b283b7f2270b15.png",
     "static/media/Zmc.jpg": "/static/media/Zmc.500b681ccc7e051c0458.jpg",
     "static/media/Jiomart.png": "/static/media/Jiomart.30574a2f63e8c8911656.png",
     "static/media/MySelf.jpg": "/static/media/MySelf.c715d98c7183bd672bcb.jpg",
+    "static/media/geekbuying.png": "/static/media/geekbuying.0eef16982382498c7a3b.png",
     "static/media/JsBasic.jpg": "/static/media/JsBasic.1fb3775945f819b53577.jpg",
+    "static/media/naukari.png": "/static/media/naukari.9e2203998fcebc63e3e4.png",
     "index.html": "/index.html",
-    "main.d59f3011.css.map": "/static/css/main.d59f3011.css.map",
-    "main.871ea754.js.map": "/static/js/main.871ea754.js.map"
+    "main.8e11bcec.css.map": "/static/css/main.8e11bcec.css.map",
+    "main.5926c3c7.js.map": "/static/js/main.5926c3c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d59f3011.css",
-    "static/js/main.871ea754.js"
+    "static/css/main.8e11bcec.css",
+    "static/js/main.5926c3c7.js"
   ]
 }
