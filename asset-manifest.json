@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.8c687c87.js",
-    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.633065a5.css",
+    "main.js": "/static/js/main.8b8e239c.js",
+    "static/media/CSS.png": "/static/media/CSS.d51352b283b7f2270b15.png",
+    "static/media/Zmc.jpg": "/static/media/Zmc.500b681ccc7e051c0458.jpg",
+    "static/media/geekbuying.png": "/static/media/geekbuying.0eef16982382498c7a3b.png",
+    "static/media/chargebee.png": "/static/media/chargebee.b8291005dc60cf3b5f78.png",
+    "static/media/JsBasic.jpg": "/static/media/JsBasic.1fb3775945f819b53577.jpg",
+    "static/media/paytmmall.png": "/static/media/paytmmall.9aa89ca3f24ac1fdef69.png",
+    "static/media/Abhay.jpg": "/static/media/Abhay.7b49c1ceec19c27e9f09.jpg",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.8c687c87.js.map": "/static/js/main.8c687c87.js.map",
-    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+    "main.633065a5.css.map": "/static/css/main.633065a5.css.map",
+    "main.8b8e239c.js.map": "/static/js/main.8b8e239c.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8c687c87.js"
+    "static/css/main.633065a5.css",
+    "static/js/main.8b8e239c.js"
   ]
 }
