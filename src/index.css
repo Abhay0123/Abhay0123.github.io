@@ -1,13 +1,198 @@
-body {
+* {
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: "0";
+  padding: "0";
+  text-decoration: none;
+}
+/* ::-webkit-scrollbar{
+  width:.5rem;
+  height: 100px;
+}
+::-webkit-scrollbar-thumb{ 
+   background: linear-gradient(rgb(148, 232, 241), rgb(190, 54, 54));
+   border-radius: 30px;
+}
+body::-webkit-scrollbar-track{
+   background: white;
+
+  border: 2px solid transparent;
+ 
+  background-clip: content-box;
+} */
+.color-toggle {
+  position: fixed;
+  right: 8px;
+  background-color: aliceblue;
+  z-index: 1000;
+}
+
+.nav-menu-all { 
+  text-decoration: none;
+  display: inline;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 100px;
+  background-color: black !important;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.bimenu {
+  display: none;
+}
+
+.skills-card-name {
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(0, 225, 255), red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.about-H,
+.tech,
+.project,
+.earns,
+.typewriter-name { 
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: linear-gradient(to right, rgb(0, 225, 255), red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
+
+.rotate {
+  background-color: black;
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+p {
+  background-color: black;
+  color: white;
+  font: 400 15px/1.8 "dancing script" cursive;
+}
+.skills-card{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  
+}
+p:hover {
+  color: cyan;
+  transition: 2s;
+  transform: rotateY(360deg);
+}
+/* Card Flip */
+
+.front {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(55deg, rgb(0, 225, 255), red);
+  height: max-content;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.certificate > div {
+  border: 2px solid black;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.skills-card,
+.project-image {
+  transition: 600ms ease-in-out;
+}
+.skills-card:hover,
+.project-image:hover {
+  cursor: pointer;
+  background: linear-gradient(55deg, red, rgb(0, 225, 255));
+  transform: scale(1.05);
+}
+.myself > img {
+  padding: 20px;
+  margin: auto;
+}
+
+.bottom:hover {
+  background: linear-gradient(55deg, rgb(0, 225, 255), red);
+  cursor: pointer;
+  border-radius: 30px 30px 0px 0px;
+}
+.tech-stack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tech-stack-section {
+  background: linear-gradient(55deg, red, rgb(0, 225, 255));
+  color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 300;
+  font-size: small;
+}
+
+/* project */
+.p1 {
+  width: 90%;
+  height: 200px;
+}
+.skills-card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.skills-card-img img {
+  width: 40px;
+}
+
+.git-link div {
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+.git-link div:hover {
+  transform: scale(1.1);
+  background: linear-gradient(55deg, rgb(0, 225, 0.55), rd);
+}
+
+.message,
+.contact-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid black;
+  width: 100%;
+  margin-bottom: 8px;
+
+  }
+
+.contact-form button {
+  background-color:#00B5D8;
+  color: wheat;
+  padding: 10px 9px;
+  border-radius: 5px;
 }
