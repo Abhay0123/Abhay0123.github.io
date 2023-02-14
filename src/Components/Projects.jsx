@@ -29,7 +29,142 @@ const Projects = () => {
       >
         {/*================================================== First Project ==================================== */}
         <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 2 }}>
-        <Zoom>
+        <Zoom><Box
+            margin="auto"
+            className="project-card"
+            w="90%"
+            h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
+            boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+            mb={{ base: "140px", sm: "80px" }}
+          >
+            <Box className="front" height="610px">
+              <Box className="p1">
+                <Image
+                  borderRadius="4px"
+                  className="project-image"
+                  mt="20px"
+                  height="250px"
+                  src={geekbuying}
+                  alt="jiomart"
+                />
+                <Box>
+                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
+                    GeekBuying App Clone
+                  </Text>
+                  <Text as="abbr" textAlign="center" className="project-description">
+                    Geekbuying leading online shop selling a wide range of
+                    consumer electronics gadgets.
+                  </Text>
+                </Box>
+                <Box>
+                  {" "}
+                  <Text as="b" fontSize="2xl" noOfLines={1}></Text>
+                </Box>
+                <Text as="b" fontSize="2xl">
+                  Tech Used: <Text as="b" className="project-tech-stack" fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React | Redux | ChakraUI </Text> 
+                </Text>
+
+                <Box
+                  mt="30px"
+                  display="flex"
+                  justifyContent="center"
+                  gap="40px"
+                  className="git-link"
+                >
+                  <Box className="project-github-link">
+                    <a
+                      href="https://github.com/Abhay0123/dead-meat-2472"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaGithubSquare size="50px" />
+                    </a>{" "}
+                  </Box>
+                  <Box className="project-deployed-link">
+                    <a
+                      href="https://electronicsbazar.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      <FaExternalLinkSquareAlt size="50px" />
+                    </a>
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Box></Zoom>
+       
+          {/*====================================== second  project =======================================*/}
+          <Zoom><Box
+            margin="auto"
+            className="project-card"
+            w="90%"
+            h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
+            boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+            mb={{ base: "140px", sm: "80px" }}
+          >
+            <Box className="front" height="610px">
+              <Box className="p1">
+                <Image
+                  borderRadius="4px"
+                  className="project-image"
+                  mt="20px"
+                  height="250px"
+                  src={paytmmall}
+                  alt="paytmMall"
+                />
+                <Box>
+                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
+                    Paytmmall App Clone
+                  </Text>
+                  <Text as="abbr" textAlign="center"  className="project-description">
+                    Paytm Mall is India's premier shopping app for buying Gift
+                    Cards, brought to you by Paytm, India's most trusted brand
+                  </Text>
+                </Box>
+                <Box>
+                  {" "}
+                  <Text as="b" fontSize="2xl" noOfLines={1}></Text>
+                </Box>
+                <Text as="b" fontSize="2xl">
+                  Tech Used: <Text as="b" className="project-tech-stack"  fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React | Redux | ChakraUI </Text> 
+                </Text>
+
+                <Box
+                  mt="30px"
+                  display="flex"
+                  justifyContent="center"
+                  gap="40px"
+                  className="git-link"
+                >
+                  <Box className="project-github-link">
+                    <a
+                      href="https://github.com/Bipin579/tasteful-pump-9576"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {" "}
+                      <FaGithubSquare size="50px" />
+                    </a>
+                  </Box>
+                  <Box className="project-deployed-link">
+                    <a
+                      href="paytm-mall-clone-eight.vercel.app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaExternalLinkSquareAlt size="50px" />
+                    </a>{" "}
+                  </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+          </Zoom>
+         
+          {/*================================================================= Third project ============================================*/}
+          <Zoom>
           <Box
             margin="auto"
             className="project-card"
@@ -95,7 +230,7 @@ const Projects = () => {
             </Box>
           </Box>
           </Zoom>
-          {/*====================================== second  project =======================================*/}
+          {/* ================================================Fourth project======================================= */}
           <Zoom>
           <Box
             margin="auto"
@@ -164,139 +299,6 @@ const Projects = () => {
             </Box>
           </Box>
         </Zoom>
-          {/*================================================================= Third project ============================================*/}
-          <Zoom><Box
-            margin="auto"
-            className="project-card"
-            w="90%"
-            h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
-            boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
-            mb={{ base: "140px", sm: "80px" }}
-          >
-            <Box className="front" height="610px">
-              <Box className="p1">
-                <Image
-                  borderRadius="4px"
-                  className="project-image"
-                  mt="20px"
-                  height="250px"
-                  src={geekbuying}
-                  alt="jiomart"
-                />
-                <Box>
-                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
-                    GeekBuying App Clone
-                  </Text>
-                  <Text as="abbr" textAlign="center" className="project-description">
-                    Geekbuying leading online shop selling a wide range of
-                    consumer electronics gadgets.
-                  </Text>
-                </Box>
-                <Box>
-                  {" "}
-                  <Text as="b" fontSize="2xl" noOfLines={1}></Text>
-                </Box>
-                <Text as="b" fontSize="2xl">
-                  Tech Used: <Text as="b" className="project-tech-stack" fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React | Redux | ChakraUI </Text> 
-                </Text>
-
-                <Box
-                  mt="30px"
-                  display="flex"
-                  justifyContent="center"
-                  gap="40px"
-                  className="git-link"
-                >
-                  <Box className="project-github-link">
-                    <a
-                      href="https://github.com/Abhay0123/dead-meat-2472"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaGithubSquare size="50px" />
-                    </a>{" "}
-                  </Box>
-                  <Box className="project-deployed-link">
-                    <a
-                      href="https://electronicsbazar.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      <FaExternalLinkSquareAlt size="50px" />
-                    </a>
-                  </Box>
-                </Box>
-              </Box>
-            </Box>
-          </Box></Zoom>
-          {/* ================================================Fourth project======================================= */}
-          <Zoom><Box
-            margin="auto"
-            className="project-card"
-            w="90%"
-            h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
-            boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
-            mb={{ base: "140px", sm: "80px" }}
-          >
-            <Box className="front" height="610px">
-              <Box className="p1">
-                <Image
-                  borderRadius="4px"
-                  className="project-image"
-                  mt="20px"
-                  height="250px"
-                  src={paytmmall}
-                  alt="paytmMall"
-                />
-                <Box>
-                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
-                    Paytmmall App Clone
-                  </Text>
-                  <Text as="abbr" textAlign="center"  className="project-description">
-                    Paytm Mall is India's premier shopping app for buying Gift
-                    Cards, brought to you by Paytm, India's most trusted brand
-                  </Text>
-                </Box>
-                <Box>
-                  {" "}
-                  <Text as="b" fontSize="2xl" noOfLines={1}></Text>
-                </Box>
-                <Text as="b" fontSize="2xl">
-                  Tech Used: <Text as="b" className="project-tech-stack"  fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React | Redux | ChakraUI </Text> 
-                </Text>
-
-                <Box
-                  mt="30px"
-                  display="flex"
-                  justifyContent="center"
-                  gap="40px"
-                  className="git-link"
-                >
-                  <Box className="project-github-link">
-                    <a
-                      href="https://github.com/Bipin579/tasteful-pump-9576"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {" "}
-                      <FaGithubSquare size="50px" />
-                    </a>
-                  </Box>
-                  <Box className="project-deployed-link">
-                    <a
-                      href="paytm-mall-clone-eight.vercel.app"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaExternalLinkSquareAlt size="50px" />
-                    </a>{" "}
-                  </Box>
-                </Box>
-              </Box>
-            </Box>
-          </Box>
-          </Zoom>
         </SimpleGrid>
       </Box>
     </Box>

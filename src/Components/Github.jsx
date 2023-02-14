@@ -39,7 +39,7 @@ const Github = () => {
           {" "}
           <SimpleGrid columns={{ base: 1, sm: 1, md: 3, lg: 3 }} gap='6px'>
             <Box >
-              <img
+              <img 
                 id="github-stats-card"
                 src="https://github-readme-stats.vercel.app/api?username=Abhay0123&show_icons=true&theme=dark&locale=en"
                 alt="Abhay0123"
@@ -48,12 +48,12 @@ const Github = () => {
             <Box >
               <img
                 id="github-streak-stats"
-                src="https://github-readme-streak-stats.herokuapp.com/?user=Abhay0123&show_icons=true&theme=dark"
+                src="https://github-readme-streak-stats.herokuapp.com?user=Abhay0123&show_icons=true&theme=dark"
                 alt="Abhay0123"
               />
             </Box>
             <Box > 
-            <img id="github-top-langs" width="380"  src="https://github-readme-stats.vercel.app/api/top-langs?username=Abhay0123&show_icons=true&theme=dark&locale=en&layout=compact" alt="Abhay0123" />
+            <img id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=Abhay0123&show_icons=true&theme=dark&locale=en&layout=compact" alt="Abhay0123" />
             </Box>
           </SimpleGrid>
         </Box>

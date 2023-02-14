@@ -73,7 +73,7 @@ return (
               Contact
             </Text>
           </Box>
-          <Box className="nav-link resume" display={{base:'none',sm:'block',md:'block',lg:'bloak'}}><a href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
+          <Box id="resume-button-1" className="nav-link resume" display={{base:'none',sm:'block',md:'block',lg:'bloak'}}><a href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
               <Button colorScheme="cyan" color='white' size="sm" rightIcon={<ImFolderDownload/>}>
                Resume</Button>
             </a></Box>
@@ -100,13 +100,13 @@ return (
           </Box>
         </SimpleGrid>
       </Box>
-        <Box   ref={Home_s} > <Home/></Box>
-        <Box  ref={About_s} > <About/></Box>
-        <Box   ref={Skills_s}  ><Skills/></Box>
+        <Box  id="home" ref={Home_s} > <Home/></Box>
+        <Box id="about" ref={About_s} > <About/></Box>
+        <Box id="skills"  ref={Skills_s}  ><Skills/></Box>
         <Box  > <Github/></Box>
-        <Box  ref={Projects_s} > <Projects/></Box>
+        <Box id="projects" ref={Projects_s} > <Projects/></Box>
         <Box ><Certificates/></Box>
-        <Box  ref={Contact_s} > <Contact/></Box>
+        <Box id="contact" ref={Contact_s} > <Contact/></Box>
         <Box  > <Footer/></Box>
         </Box> 
       </Box>

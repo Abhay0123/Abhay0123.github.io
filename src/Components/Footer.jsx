@@ -15,11 +15,12 @@ const Footer = () => {
           mt={{ base: "250px", sm: "100px", md: "100px", lg: "0px" }}
           margin="auto"
         >
-            <Text as="b" fontSize={["xs", "lg", "xl", "xl"]}>
+            <Text as="b" fontSize={["xs", "lg", "xl", "xl"]} color='white'>
             <Typewriter
             words={["Ⓒ 2022 Designed and Built by Abhay with 🤍"]}
             cursor
             cursorStyle="|"
+            loop={50000000}
             typeSpeed={100}
             deleteSpeed={100}
            
@@ -27,7 +28,7 @@ const Footer = () => {
              
             </Text>{" "}
             
-          {/* </Box> */}
+         
         </Box>
       </Box>
     </Box>
