@@ -1,7 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import { BsHeartFill } from "react-icons/bs";
-import { RiCopyrightLine } from "react-icons/ri";
 import { Typewriter } from "react-simple-typewriter";
 const Footer = () => {
   return (

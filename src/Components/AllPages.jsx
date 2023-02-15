@@ -1,10 +1,7 @@
-import { Box, Button, HStack, Icon, SimpleGrid, Text } from '@chakra-ui/react';
-import React, { useContext } from 'react'
+import { Box, Button, IconButton, SimpleGrid, Text } from '@chakra-ui/react';
+import React, { useState } from 'react'
 import { useRef } from 'react';
-import { FaSun } from 'react-icons/fa';
-import { GiMoon } from 'react-icons/gi';
 import { ImFolderDownload } from 'react-icons/im';
-import { AppContext } from '../Theme/ThemeContextProvider';
 import About from './About';
 import Certificates from './Certificates';
 import Contact from './Contact';
@@ -13,18 +10,19 @@ import Github from './Github';
 import Home from './Home';
 import Projects from './Projects';
 import Skills from './Skills';
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItemOption,
+ 
+  MenuOptionGroup,
+
+} from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons';
 const AllPages = () => {
-    const { theme, toggleTheme } = useContext(AppContext);
-    const style = {
-        Light: {
-          color: "black",
-          backgroundColor: "#FFFFFF",
-        },
-        Dark: {
-          color: "white",
-          backgroundColor: "#171923",
-        },
-      };
+   const [color,setColor]= useState('black');
+
       const Home_s=useRef(null);
       const About_s=useRef(null);
       const Skills_s=useRef(null);
@@ -36,16 +34,21 @@ const AllPages = () => {
           behavior:'smooth'
         })
       }
+
+const handleClick=(c)=>{
+   console.log(c);
+   setColor(c);
+}
+
 return (
     <>
  <Box
-    
+   
     width='100%'
-    ref={Home_s}
    >
 <Box margin="auto"  
-      style={theme === "Dark" ? style.Dark : style.Light}
-     >
+       className={color}
+    >
      <Box h="70px" className="nav-menu-all">
         <SimpleGrid columns={6} fontSize={[10, 18, 20, 22]} id="nav-menu">
           <Box className="nav-link home"  onClick={() => scrollToSection(Home_s)}>
@@ -73,31 +76,33 @@ return (
               Contact
             </Text>
           </Box>
-          <Box id="resume-button-1" className="nav-link resume" display={{base:'none',sm:'block',md:'block',lg:'bloak'}}><a href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
-              <Button colorScheme="cyan" color='white' size="sm" rightIcon={<ImFolderDownload/>}>
+          <Box className="nav-link resume" display={{base:'none',sm:'block',md:'block',lg:'bloak'}}>
+            <a id="resume-link-1" href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
+              <Button id="resume-button-1"  colorScheme="cyan" color='white' size="sm" rightIcon={<ImFolderDownload/>}>
                Resume</Button>
             </a></Box>
           
-          <Box as="span" className="color-toggle" bg="black" cursor="pointer">
-            {" "}
-            {theme === "Light" ? (
-              <Icon
-                as={GiMoon}
-                w={3}
-                h={3}
-                onClick={toggleTheme}
-                color="white"
-              />
-            ) : (
-              <Icon
-                as={FaSun}
-                w={3}
-                h={3}
-                onClick={toggleTheme}
-                color="white"
-              />
-            )}
-          </Box>
+          <Box className="color-toggle" mt={['-12px','0px','0px','0px']}>
+          <Menu closeOnSelect={true} >
+  <MenuButton  as={IconButton} colorScheme='black' 
+    aria-label='Options'
+    icon={<HamburgerIcon />}>
+    
+  </MenuButton>
+  <MenuList minWidth='10px' className="menu-list" color='black' background='#00B5D8'>
+   
+    <MenuOptionGroup defaultValue='b'  type='radio'>
+      <MenuItemOption colorScheme='black'  value='p' onClick={()=>handleClick('purple')}>🟣</MenuItemOption>
+      <MenuItemOption  value='r' onClick={()=>handleClick('red')}>🔴</MenuItemOption>
+      <MenuItemOption  value='b' onClick={()=>handleClick('black')}>⚫</MenuItemOption>
+      <MenuItemOption  value='w' onClick={()=>handleClick('white')}>⚪</MenuItemOption>
+
+    </MenuOptionGroup>
+    
+   
+  </MenuList>
+</Menu>
+       </Box>
         </SimpleGrid>
       </Box>
         <Box  id="home" ref={Home_s} > <Home/></Box>

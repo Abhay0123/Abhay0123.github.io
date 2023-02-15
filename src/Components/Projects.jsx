@@ -36,6 +36,7 @@ const Projects = () => {
             h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
+            borderRadius="4px"
           >
             <Box className="front" height="610px">
               <Box className="p1">
@@ -103,6 +104,7 @@ const Projects = () => {
             h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
+            borderRadius="4px"
           >
             <Box className="front" height="610px">
               <Box className="p1">
@@ -169,11 +171,12 @@ const Projects = () => {
             margin="auto"
             className="project-card"
             w="90%"
-            h={{ base: "550px", sm: "500px", md: "550px", lg: "580px" }}
+            h={{ base: "550px", sm: "500px", md: "550px", lg: "570px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
+            borderRadius="4px"
           >
-            <Box className="front" h={["620px", "570px", "620px", "570px"]}>
+            <Box className="front" h={["620px", "570px", "620px", "580px"]}>
               <Box className="p1">
                 <Image
                   className="project-image"
@@ -236,11 +239,12 @@ const Projects = () => {
             margin="auto"
             className="project-card"
             w="90%"
-            h={{ base: "550px", sm: "500px", md: "550px", lg: "580px" }}
+            h={{ base: "550px", sm: "500px", md: "550px", lg: "570px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
+            borderRadius="4px"
           >
-            <Box className="front" h={["620px", "570px", "620px", "570px"]}>
+            <Box className="front" h={["620px", "570px", "620px", "580px"]}>
               <Box className="p1">
                 <Image
                   borderRadius="4px"

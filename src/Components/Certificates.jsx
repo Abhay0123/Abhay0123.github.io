@@ -3,6 +3,7 @@ import React from "react";
 import Zmc from "../Images/Zmc.jpg";
 import JsBasic from "../Images/JsBasic.jpg";
 import CSS from "../Images/CSS.png";
+import Zoom from 'react-reveal/Zoom';
 const Certificates = () => {
   return (
     <Box>
@@ -11,7 +12,7 @@ const Certificates = () => {
           Certificates
         </Text>
       </Box>
-
+      <Zoom>
       <SimpleGrid
         columns={[1, null, 3]}
         spacing="20px"
@@ -42,7 +43,7 @@ const Certificates = () => {
             alt="Zoom_marathon_challenge"
           />
         </Box>
-      </SimpleGrid>
+      </SimpleGrid> </Zoom>
     </Box>
   );
 };

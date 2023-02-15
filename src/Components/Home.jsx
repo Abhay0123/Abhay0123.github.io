@@ -16,14 +16,6 @@ const Home = () => {
               className="about-H"
               fontSize={["2xl", "3xl", "4xl", "5xl"]}
                >
-        {/* <Typewriter
-           options={{
-               strings: ["Hi there,I'm Abhay Kumar"],
-               autoStart: true,
-               cursorStyle:'|',
-               loop: true,
-               }}
-            /> */} 
             <Typewriter
             words={["Hi there,I'm Abhay Kumar"]}
             loop={5000000000}
@@ -60,17 +52,18 @@ const Home = () => {
             </Box>
 
             <Box display={['grid' ,'flex','flex' ,'flex']}>
+
+              {/* <Button id="resume-button-1" colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={ <FaExternalLinkSquareAlt size="30px" />}>
                <a   id="resume-link-1"
               href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link"
               target="blank"
-            >
-              <Button  colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={ <FaExternalLinkSquareAlt size="30px" />}>
-               Resume</Button>
-            </a>
-            <Box><a id="resume-link-2" href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
-              <Button  colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={<ImFolderDownload size="30px"/>}>
-               Resume</Button>
-            </a></Box></Box>
+            >Resume </a></Button> */}
+           
+            <Box><Button id="resume-button-2" colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={<ImFolderDownload size="30px"/>}>
+              <a id="resume-link-2" href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
+               Resume</a>
+              </Button>
+            </Box></Box>
           </Box>
 
           <Box className="landingPage">

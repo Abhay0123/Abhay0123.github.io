@@ -97,7 +97,7 @@ const About = () => {
               src={Abhay}
               alt="AbhayKumar"
               borderRadius="20px"
-              boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
+               boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             />
           </Box>
         </SimpleGrid>
