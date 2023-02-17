@@ -7,7 +7,7 @@ const Github = () => {
   return (
     <BouncyDiv>
       <Box mt="40px">
-        <Box w="100%" align="center" mb='30px'>
+        <Box w="max-content" align="center"  className="heading-hover" margin={'auto'} mb='40px'>
           <Text
             className="about-H"
             fontSize={["2xl", "2xl", "3xl", "4xl"]}
@@ -16,6 +16,7 @@ const Github = () => {
           >
             GitHub Status
           </Text>
+          <span className='underline-about'><span className='underline-about1'>Eat/Sleep/Code</span></span>
         </Box>
 
         <Box margin={"auto"} w="90%">

@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <Box id="skills" data-aos="fade-right">
       <Box mt="20px" w="100%" >
-        <Box w="100%" align="center" mb='20px'>
+        <Box w="max-content" align="center" className="heading-hover" margin={'auto'}  mb='30px'>
           <Text
             className="about-H"
             fontSize={["2xl", "2xl", "3xl", "4xl"]}
@@ -14,6 +14,7 @@ const Skills = () => {
           >
             Tech Stack
           </Text>
+          <span className='underline-about'><span className='underline-about1'>Hands On Skills</span></span>
         </Box>
 
        

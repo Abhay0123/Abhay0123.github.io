@@ -1,9 +1,8 @@
 import { Box, Button, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
 import { ImFolderDownload } from "react-icons/im";
-//import Typewriter from 'typewriter-effect';
 import { Typewriter } from "react-simple-typewriter";
+
 const Home = () => {
   return (
     <Box  id="home">
@@ -24,20 +23,19 @@ const Home = () => {
             typeSpeed={100}
             deleteSpeed={100}
             delaySpeed={2000}
-            // onLoopDone={handleDone}
-            // onType={handleType}
           />
+         
             </Box>
-             
+
             </Box>
             <Box mt={["12px", "20px", "30px", "40px"]}>
-              {" "}
+              
               <Text fontSize={["lg", "xl", "2xl", "2xl"]} as="b">
                 Software Engineer By Knowledge
               </Text>
             </Box>
             <Box>
-              {" "}
+             
               <Text
                 fontSize={["md", "lg", "2xl", "2xl"]}
                 as="i"
@@ -52,12 +50,6 @@ const Home = () => {
             </Box>
 
             <Box display={['grid' ,'flex','flex' ,'flex']}>
-
-              {/* <Button id="resume-button-1" colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={ <FaExternalLinkSquareAlt size="30px" />}>
-               <a   id="resume-link-1"
-              href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link"
-              target="blank"
-            >Resume </a></Button> */}
            
             <Box><Button id="resume-button-2" colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={<ImFolderDownload size="30px"/>}>
               <a id="resume-link-2" href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>

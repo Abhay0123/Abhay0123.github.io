@@ -7,8 +7,8 @@ const About = () => {
     <Box  id="about" className="about section">
       <Box h="5px" bg="black"></Box>
       {/*================================================ About me section =====================================*/}
-      <Box ref={About} w="100%" p="6px">
-        <Box w="100%" mb={["0px", "20px",'30px']} align="center" >
+      <Box  w="100%" p="6px">
+        <Box w="max-content" mb={["0px", "20px",'30px']} align="center" className="heading-hover" margin={'auto'}>
           <Text
             className="about-H"
             fontSize={["2xl", "2xl", "3xl", "4xl"]}
@@ -18,6 +18,8 @@ const About = () => {
           >
             About me
           </Text>
+          <span className='underline-about'><span className='underline-about1'>Who i am</span></span>
+          
         </Box>
        
         <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 2 }} spacing={10}>

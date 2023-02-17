@@ -14,15 +14,16 @@ const Contact = () => {
         height="450px"
         mb={["150px", "160px", "0px", "0px", "0px"]}
       >
-        <Box w="100%" align="center" mb='30px'>
+        <Box w="max-content" align="center" className="heading-hover" margin={'auto'}  mb='20px'>
           <Text
             className="about-H"
             fontSize={["2xl", "2xl", "3xl", "4xl"]}
             as="b"
             fontWeight='extrabold'
           >
-            Let's Get In Touch
+            Contact Me
           </Text>
+          <span className='underline-about'><span className='underline-about1'>Let's Get In Touch</span></span>
         </Box>
 
         <SimpleGrid

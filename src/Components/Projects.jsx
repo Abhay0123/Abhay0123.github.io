@@ -8,8 +8,8 @@ import Zoom from 'react-reveal/Zoom';
 const Projects = () => {
   return (
     <Box id="projects">
-      <Box mt={{ base: "100px", sm: "130px", md: "150px", lg: "100px" }}>
-        <Box w="100%" align="center" mb='30px'>
+      <Box mt={{ base: "100px", sm: "130px", md: "150px", lg: "100px" }} mb='40px'>
+        <Box w="max-content" align="center" mb='30px' className="heading-hover" margin={'auto'}>
           <Text
             className="about-H"
             fontSize={["2xl", "2xl", "3xl", "4xl"]}
@@ -18,6 +18,7 @@ const Projects = () => {
           >
             My Projects
           </Text>
+          <span className='underline-about'><span className='underline-about1'>Hands On Project</span></span>
         </Box>
      
       </Box>
