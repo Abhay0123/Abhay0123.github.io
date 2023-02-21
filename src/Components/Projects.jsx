@@ -153,7 +153,7 @@ const Projects = () => {
                   </Box>
                   <Box className="project-deployed-link">
                     <a
-                      href="paytm-mall-clone-eight.vercel.app"
+                      href="https://paytm-mall-clone-eight.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
