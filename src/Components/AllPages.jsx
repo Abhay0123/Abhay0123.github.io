@@ -77,7 +77,7 @@ return (
             </Text>
           </Box>
           <Box className="nav-link resume" display={{base:'none',sm:'block',md:'block',lg:'bloak'}}>
-            <a id="resume-link-1" href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
+            <a id="resume-link-1" href="https://drive.google.com/file/d/1g2MdmOHk5ezX1fMlr60k3fDVSe0KzRxO/view?usp=share_link" download>
               <Button id="resume-button-1"  colorScheme="cyan" color='white' size="sm" rightIcon={<ImFolderDownload/>}>
                Resume</Button>
             </a></Box>

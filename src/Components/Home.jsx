@@ -50,7 +50,7 @@ const Home = () => {
             <Box display={['grid' ,'flex','flex' ,'flex']}>
            
             <Box><Button id="resume-button-2" colorScheme="cyan" color='white'  height='48px' width='200px'  mt="30px" size="xl" rightIcon={<ImFolderDownload size="30px"/>}>
-              <a id="resume-link-2" href="https://drive.google.com/file/d/1r7DpNgJQGB6_G5vg-4rXZwL-0auyvjWo/view?usp=share_link" download>
+              <a id="resume-link-2" href="https://drive.google.com/file/d/1g2MdmOHk5ezX1fMlr60k3fDVSe0KzRxO/view?usp=share_link" download>
                Resume</a>
               </Button>
             </Box></Box>
