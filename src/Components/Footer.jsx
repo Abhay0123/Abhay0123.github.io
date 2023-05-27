@@ -15,7 +15,7 @@ const Footer = () => {
         >
             <Text as="b" fontSize={["xs", "lg", "xl", "xl"]} color='white'>
             <Typewriter
-            words={["Ⓒ 2022 Designed and Built by Abhay with 🤍"]}
+            words={["Ⓒ 2023 Designed and Built by Abhay with 🤍"]}
             cursor
             cursorStyle="|"
             loop={50000000}

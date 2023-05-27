@@ -38,7 +38,7 @@ const Skills = () => {
                     className="skills-card-img"
                     boxSize="100px"
                     src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg"
-                    alt="react"
+                    alt="HTML"
                   ></Image></Rotate>
                   <Text as="b" align="center" fontWeight="800" className="skills-card-name">
                     HTML
@@ -57,7 +57,7 @@ const Skills = () => {
                     className="skills-card-img"
                     boxSize="100px"
                     src="https://chiranjeev-thapliyal.vercel.app/svg/css3.svg"
-                    alt="react"
+                    alt="CSS"
                   ></Image></Rotate>
                   <Text as="b" align="center" fontWeight="800" className="skills-card-name">
                     CSS
@@ -74,7 +74,7 @@ const Skills = () => {
                     className="skills-card-img"
                     boxSize="100px"
                     src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg"
-                    alt="react"
+                    alt="javascript"
                   ></Image></Rotate>
                   <Text as="b" align="center" fontWeight="800" className="skills-card-name">
                     JAVASCRIPT
@@ -108,11 +108,11 @@ const Skills = () => {
                   <Image
                     className="skills-card-img"
                     boxSize="100px"
-                    src="https://chiranjeev-thapliyal.vercel.app/svg/redux.svg"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg"
                     alt="react"
                   ></Image></Rotate>
                   <Text as="b" align="center" className="skills-card-name" fontWeight="800">
-                    REDUX
+                    JAVA
                   </Text>
                 </Box>
                
@@ -126,11 +126,29 @@ const Skills = () => {
                   <Image
                     className="skills-card-img"
                     boxSize="100px"
-                    src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg"
-                    alt="react"
+                    src="https://camo.githubusercontent.com/9f6fbaa3154800eef23c4dc7ed718f911deb50e0d5f58f9226d7dc278d901973/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f61746c61737369616e5f6a6972612f61746c61737369616e5f6a6972612d69636f6e2e737667"
+                    alt="Selenium"
                   ></Image></Rotate>
                   <Text as="b" align="center" fontWeight="800" className="skills-card-name">
-                    NODEJS
+                    JIRA 
+                  </Text>
+                </Box>
+
+                <Box
+                  bg="black"
+                  borderRadius="md"
+                  w="100%"
+                  h="140px"
+                   className="skills-card"
+                ><Rotate>
+                  <Image
+                    className="skills-card-img"
+                    boxSize="100px"
+                    src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg"
+                    alt="Selenium"
+                  ></Image></Rotate>
+                  <Text as="b" align="center" fontWeight="800" className="skills-card-name">
+                    SELENIUM
                   </Text>
                 </Box>
 
@@ -145,8 +163,8 @@ const Skills = () => {
                     className="skills-card-img"
                     mt="10px"
                     boxSize="80px"
-                    src="https://www.pngfind.com/pngs/m/136-1363736_express-js-icon-png-transparent-png.png"
-                    alt="react"
+                    src="https://blog.knoldus.com/wp-content/uploads/2022/04/cypress.png"
+                    alt="CYPRESS"
                 ></Image></Rotate>
                   <Text
                     align="center"
@@ -155,9 +173,61 @@ const Skills = () => {
                     className="skills-card-name"
                     as="b"
                   >
-                    EXPRESSJS
+                    CYPRESS
                   </Text>
                 </Box>
+
+
+                <Box
+                   className="skills-card"
+                  bg="black"
+                  borderRadius="md"
+                  w="100%"
+                  h="140px"
+                ><Rotate>
+                  <Image
+                    className="skills-card-img"
+                    mt="10px"
+                    boxSize="80px"
+                    src="https://wedevx.cdn.prismic.io/wedevx/9453029c-c498-4c6a-a9cb-fc399c334195_rest-api-icon+1.svg"
+                    alt="CYPRESS"
+                ></Image></Rotate>
+                  <Text
+                    align="center"
+                    mt="9px"
+                    fontWeight="800"
+                    className="skills-card-name"
+                    as="b"
+                  >
+                    API
+                  </Text>
+                </Box>
+
+                <Box
+                   className="skills-card"
+                  bg="black"
+                  borderRadius="md"
+                  w="100%"
+                  h="140px"
+                ><Rotate>
+                  <Image
+                    className="skills-card-img"
+                    mt="10px"
+                    boxSize="80px"
+                    src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_cucumber_icon_130657.png"
+                    alt="CYPRESS"
+                ></Image></Rotate>
+                  <Text
+                    align="center"
+                    mt="9px"
+                    fontWeight="800"
+                    className="skills-card-name"
+                    as="b"
+                  >
+                    CUCUMBER
+                  </Text>
+                </Box>
+
                 <Box
                    className="skills-card"
                   bg="black"
@@ -170,8 +240,8 @@ const Skills = () => {
                     className="skills-card-img"
                     mt="10px"
                     boxSize="80px"
-                    src="https://www.rlogical.com/wp-content/uploads/2021/08/Rlogical-Blog-Images-thumbnail.png"
-                    alt="react"
+                    src="https://camo.githubusercontent.com/4253eb6921d60a216772940978dea3a0cf2113f2f29b5545720d3b5b6960e467/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6d6f6368616a732f6d6f6368616a732d69636f6e2e737667"
+                    alt="MOCHA"
                   ></Image></Rotate>
                   <Text
                     align="center"
@@ -180,7 +250,7 @@ const Skills = () => {
                     mt="8px"
                     as="b"
                   >
-                    NEXTJS
+                    MOCHA
                   </Text>
                 </Box>
                 <Box
@@ -193,11 +263,11 @@ const Skills = () => {
                   <Image
                     className="skills-card-img"
                     boxSize="100px"
-                    src="https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_logo_icon_146424.png"
-                    alt="react"
+                    src="https://camo.githubusercontent.com/93b32389bf746009ca2370de7fe06c3b5146f4c99d99df65994f9ced0ba41685/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f676574706f73746d616e2f676574706f73746d616e2d69636f6e2e737667"
+                    alt="POSTMAN"
                   ></Image></Rotate>
                   <Text align="center" as="b" className="skills-card-name" fontWeight="800">
-                    MONGODB
+                    POSTMAN
                   </Text>
                 </Box>
 
@@ -211,18 +281,35 @@ const Skills = () => {
                   <Image
                     className="skills-card-img"
                     boxSize="100px"
-                    src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png"
+                    src="https://www.simplilearn.com/ice9/tools_covered/junit.png"
                     alt="react"
                   ></Image></Rotate>
                   <Text align="center" fontWeight="800" className="skills-card-name" as="b">
-                    GITHUB
+                    JUNIT
                   </Text>
                 </Box>
                
-                
+                <Box
+                   className="skills-card"
+                  bg="black"
+                  borderRadius="md"
+                  w="100%"
+                  h="140px"
+                ><Rotate>
+                  <Image
+                    className="skills-card-img"
+                    boxSize="100px"
+                    src="https://camo.githubusercontent.com/265574c40f0816ed0fd67127cfbc382866182a7ec468c614906103c15700e707/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6a656e6b696e732f6a656e6b696e732d69636f6e2e737667"
+                    alt="react"
+                  ></Image></Rotate>
+                  <Text align="center" fontWeight="800" className="skills-card-name" as="b">
+                    JENKINS
+                  </Text>
+                </Box>
               </SimpleGrid>
           
-       
+           
+
       </Box>
     </Box>
   );

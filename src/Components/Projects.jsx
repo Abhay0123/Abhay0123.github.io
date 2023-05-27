@@ -1,10 +1,9 @@
-import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
-import { FaGithubSquare, FaExternalLinkSquareAlt } from "react-icons/fa";
-import geekbuying from "../Images/geekbuying.png";
-import paytmmall from "../Images/paytmmall.png";
-import chargebee from "../Images/chargebee.png";
+import { FaGithubSquare} from "react-icons/fa";
+import {HiDocumentReport} from "react-icons/hi";
 import Zoom from 'react-reveal/Zoom';
+
 const Projects = () => {
   return (
     <Box id="projects">
@@ -29,41 +28,44 @@ const Projects = () => {
         id="projects"
       >
         {/*================================================== First Project ==================================== */}
-        <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 2 }}>
+        <SimpleGrid columns={{ base: 1, sm: 1, md: 4, lg: 4 }}>
         <Zoom><Box
             margin="auto"
             className="project-card"
             w="90%"
-            h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
+            h={{ base: "410px", sm: "400px", md: "450px", lg: "550px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
             borderRadius="4px"
           >
-            <Box className="front" height="610px">
+            <Box className="front" height="580px">
               <Box className="p1">
-                <Image
-                  borderRadius="4px"
-                  className="project-image"
-                  mt="20px"
-                  height="250px"
-                  src={geekbuying}
-                  alt="jiomart"
-                />
+                
                 <Box>
-                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
-                    GeekBuying App Clone
+                  <Text as="b" fontSize="2xl" noOfLines={2} mt="10px" className="project-title">
+                  MXPlayer Website Testing
                   </Text>
                   <Text as="abbr" textAlign="center" className="project-description">
-                    Geekbuying leading online shop selling a wide range of
-                    consumer electronics gadgets.
-                  </Text>
+                  MX Player is a video streaming app that offers thousands of hours of premium, exclusive and original content from leading Producers and Publishers.
+          </Text>
+
+          <br/>
                 </Box>
                 <Box>
                   {" "}
                   <Text as="b" fontSize="2xl" noOfLines={1}></Text>
                 </Box>
-                <Text as="b" fontSize="2xl">
-                  Tech Used: <Text as="b" className="project-tech-stack" fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React | Redux | ChakraUI </Text> 
+                <Box display='grid'>
+                   <Text as='b'>Areas of Responsibilities</Text>
+                       <Text as='md'>1. Created XMind Map</Text>  
+                       <Text as='md'>2. Worked on Jira Dashboard and Selenium Project Framework</Text>
+                       <Text as='md'>3. Implemented Selenium with java on Test Cases </Text>
+                       <Text as='md'>4. Tested the GO-ADD-FREE section</Text>
+                       <Text as='md'>5. Generated Reports using TestNG</Text>
+                </Box>
+
+                <Text as="b">
+                  Tech Used: <Text as="b" className="project-tech-stack" >XMind Map | Jira | Selenium | Git </Text> 
                 </Text>
 
                 <Box
@@ -75,7 +77,7 @@ const Projects = () => {
                 >
                   <Box className="project-github-link">
                     <a
-                      href="https://github.com/Abhay0123/dead-meat-2472"
+                      href="https://github.com/Abhay0123/Selenium_Framework/tree/master/final-framework-testng"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -84,12 +86,12 @@ const Projects = () => {
                   </Box>
                   <Box className="project-deployed-link">
                     <a
-                      href="https://electronicsbazar.vercel.app/"
+                      href="https://drive.google.com/drive/folders/1EA9UkQXKNUj8iVZd6YLBf9X5RjbAW8EL"
                       target="_blank"
                       rel="noreferrer"
                     >
                       {" "}
-                      <FaExternalLinkSquareAlt size="50px" />
+                      <HiDocumentReport size="50px" />
                     </a>
                   </Box>
                 </Box>
@@ -102,36 +104,39 @@ const Projects = () => {
             margin="auto"
             className="project-card"
             w="90%"
-            h={{ base: "480px", sm: "500px", md: "550px", lg: "550px" }}
+            h={{ base: "410px", sm: "400px", md: "450px", lg: "450px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
             borderRadius="4px"
           >
-            <Box className="front" height="610px">
+            <Box className="front" height="540px">
               <Box className="p1">
-                <Image
-                  borderRadius="4px"
-                  className="project-image"
-                  mt="20px"
-                  height="250px"
-                  src={paytmmall}
-                  alt="paytmMall"
-                />
+                
                 <Box>
-                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
-                    Paytmmall App Clone
+                  <Text as="b" fontSize="2xl" noOfLines={2} mt="10px" className="project-title">
+                  AJIO website Testing
                   </Text>
-                  <Text as="abbr" textAlign="center"  className="project-description">
-                    Paytm Mall is India's premier shopping app for buying Gift
-                    Cards, brought to you by Paytm, India's most trusted brand
-                  </Text>
+                  <Text as="abbr" textAlign="center" className="project-description">
+                  AJIO, a fashion and lifestyle brand, is Reliance Retail’s digital commerce initiative and is the ultimate fashion destination for styles that are the best.</Text>
+                  
+                  <br/>
+
                 </Box>
                 <Box>
                   {" "}
                   <Text as="b" fontSize="2xl" noOfLines={1}></Text>
                 </Box>
-                <Text as="b" fontSize="2xl">
-                  Tech Used: <Text as="b" className="project-tech-stack"  fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React | Redux | ChakraUI </Text> 
+                <Box display='grid'>
+                   <Text as='b'>Areas of Responsibilities</Text>
+                       <Text as='md'>1. Created XMind Map</Text>
+                       <Text as='md'>2. Created Test cases and automate them</Text>  
+                       <Text as='md'>3. Implemented cypress on test cases</Text>
+                       <Text as='md'>4. Project Report on cypress-mochawesome-reporter </Text>
+                       <Text as='md'>5. Project Repo Readme file Update</Text>
+                </Box>
+
+                <Text as="b">
+                  Tech Used: <Text as="b" className="project-tech-stack">Cypress | JavaScript | cypress-mochawesome-reporte </Text> 
                 </Text>
 
                 <Box
@@ -143,63 +148,65 @@ const Projects = () => {
                 >
                   <Box className="project-github-link">
                     <a
-                      href="https://github.com/Bipin579/tasteful-pump-9576"
+                      href="https://github.com/Mamta305/Ajio"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaGithubSquare size="50px" />
+                    </a>{" "}
+                  </Box>
+                  <Box className="project-deployed-link">
+                    <a
+                      href="https://drive.google.com/drive/u/0/folders/1UIPxuqweugbUBZHRztGxTJMdpOLR2ztj"
                       target="_blank"
                       rel="noreferrer"
                     >
                       {" "}
-                      <FaGithubSquare size="50px" />
+                      <HiDocumentReport size="50px" />
                     </a>
-                  </Box>
-                  <Box className="project-deployed-link">
-                    <a
-                      href="https://paytm-mall-clone-eight.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaExternalLinkSquareAlt size="50px" />
-                    </a>{" "}
                   </Box>
                 </Box>
               </Box>
             </Box>
-          </Box>
-          </Zoom>
+          </Box></Zoom>
          
           {/*================================================================= Third project ============================================*/}
-          <Zoom>
-          <Box
+          <Zoom><Box
             margin="auto"
             className="project-card"
             w="90%"
-            h={{ base: "550px", sm: "500px", md: "550px", lg: "570px" }}
+            h={{ base: "410px", sm: "400px", md: "450px", lg: "450px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
             borderRadius="4px"
           >
-            <Box className="front" h={["620px", "570px", "620px", "580px"]}>
+            <Box className="front" height="500px">
               <Box className="p1">
-                <Image
-                  className="project-image"
-                  borderRadius="4px"
-                  mt="20px"
-                  height="250px"
-                  src="https://user-images.githubusercontent.com/105914405/195310897-76bca200-ebf7-40a4-81a5-af3b1f64494c.png"
-                  alt="jiomart"
-                />
+                
                 <Box>
-                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
-                    happyfox App Clone
+                  <Text as="b" fontSize="2xl" noOfLines={2} mt="10px" className="project-title">
+                  GitHub API Testing
                   </Text>
                   <Text as="abbr" textAlign="center" className="project-description">
-                    HappyFox is a cloud-based customer support software.
-                    Intuitive in its design, HappyFox is the preferred help desk
-                    of many successful global organizations.
-                  </Text>
+Github APIs( or Github ReST APIs) are the APIs that you can use to interact with GitHub. They allow you to create and manage repositories, branches, issues, pull requests, and many more.
+          </Text>
+
+          <br/>
                 </Box>
-                
-                <Text as="b" fontSize="2xl" >
-                  Tech Used: <Text as="b" className="project-tech-stack" fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript </Text> 
+                <Box>
+                  {" "}
+                  <Text as="b" fontSize="2xl" noOfLines={1}></Text>
+                </Box>
+                <Box display='grid'>
+                   <Text as='b'>Areas of Responsibility</Text>
+                       <Text as='md'>1. Create, update and get Repository</Text>  
+                       <Text as='md'>2. Update file content and fork Repository</Text>
+                       <Text as='md'>3. Delete the Repository </Text>
+                       <Text as='md'>4. Generate Reports</Text>
+                </Box>
+
+                <Text as="b">
+                  Tech Used: <Text as="b" className="project-tech-stack" > Rest Assured | Postman | Cypress | Selenium | Cucumber </Text> 
                 </Text>
 
                 <Box
@@ -210,67 +217,64 @@ const Projects = () => {
                   className="git-link"
                 >
                   <Box className="project-github-link">
-                    {" "}
                     <a
-                      href="https://github.com/RajputHim/HappyFox-Clone"
+                      href="https://github.com/Mamta305/Api-testing"
                       target="_blank"
                       rel="noreferrer"
                     >
                       <FaGithubSquare size="50px" />
                     </a>{" "}
                   </Box>
-                  <Box  className="project-deployed-link">
+                  <Box className="project-deployed-link">
                     <a
-                      href="https://inspiring-sprinkles-7ae76a.netlify.app/"
+                      href="https://drive.google.com/drive/folders/1m_yrY2Gfwqe-OoIciqP-ncsXOGyIBc8z?usp=share_link"
                       target="_blank"
                       rel="noreferrer"
                     >
                       {" "}
-                      <FaExternalLinkSquareAlt size="50px" />
+                      <HiDocumentReport size="50px" />
                     </a>
                   </Box>
                 </Box>
               </Box>
             </Box>
-          </Box>
-          </Zoom>
+          </Box></Zoom>
           {/* ================================================Fourth project======================================= */}
-          <Zoom>
-          <Box
+          <Zoom><Box
             margin="auto"
             className="project-card"
             w="90%"
-            h={{ base: "550px", sm: "500px", md: "550px", lg: "570px" }}
+            h={{ base: "410px", sm: "400px", md: "450px", lg: "450px" }}
             boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
             mb={{ base: "140px", sm: "80px" }}
             borderRadius="4px"
           >
-            <Box className="front" h={["620px", "570px", "620px", "580px"]}>
+            <Box className="front" height="480px">
               <Box className="p1">
-                <Image
-                  borderRadius="4px"
-                  className="project-image"
-                  mt="20px"
-                  height="250px"
-                  src={chargebee}
-                  alt="jiomart"
-                />
+                
                 <Box>
-                  <Text as="b" fontSize="2xl" noOfLines={1} mt="10px" className="project-title">
-                    Chargebee App Clone
+                  <Text as="b" fontSize="2xl" noOfLines={2} mt="10px" className="project-title">
+                  Khan Academy App Testing
                   </Text>
                   <Text as="abbr" textAlign="center" className="project-description">
-                    Chargebee is the recurring revenue management platform for
-                    global scale. Leading companies trust Chargebee to power
-                    their full recurring revenue lifecycle.
-                  </Text>
+                  Khan Academy is a mobile app where we can join any course for compitative examinations. And you can do live classes on that also.
+          </Text>
+
+          <br/>
                 </Box>
                 <Box>
                   {" "}
                   <Text as="b" fontSize="2xl" noOfLines={1}></Text>
                 </Box>
-                <Text as="b" fontSize="2xl">
-                  Tech Used: <Text as="b" className="project-tech-stack" fontSize={["16px" , "16px","18px","xl"]}>HTML | CSS | JavaScript | React |ChakraUI </Text> 
+                <Box display='grid'>
+                   <Text as='b'>Areas of Responsibility</Text>
+                       <Text as='md'>1. Configure POM in this project</Text>  
+                       <Text as='md'>2. Implemented Wdio and appium with Javascript on Test Cases </Text>
+                       <Text as='md'>3. Report Generation using Allure</Text>
+                </Box>
+
+                <Text as="b">
+                  Tech Used: <Text as="b" className="project-tech-stack" > WDIO | Appium | Emulator | VS Code | Git </Text> 
                 </Text>
 
                 <Box
@@ -282,28 +286,27 @@ const Projects = () => {
                 >
                   <Box className="project-github-link">
                     <a
-                      href="https://github.com/Sunilkumar93/fluffy-shelf-1478"
+                      href="https://github.com/pratibhavgupta/Khan_Academy_App_Testing"
                       target="_blank"
                       rel="noreferrer"
                     >
-                     
                       <FaGithubSquare size="50px" />
-                    </a>
+                    </a>{" "}
                   </Box>
                   <Box className="project-deployed-link">
                     <a
-                      href="https://fluffy-shelf-1478.vercel.app/"
+                      href="https://drive.google.com/drive/folders/1WtcQxa9ddWFwRPPle3FHAy0FvIIks-Wi?usp=share_link"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <FaExternalLinkSquareAlt size="50px" />
+                      {" "}
+                      <HiDocumentReport size="50px" />
                     </a>
                   </Box>
                 </Box>
               </Box>
             </Box>
-          </Box>
-        </Zoom>
+          </Box></Zoom>
         </SimpleGrid>
       </Box>
     </Box>

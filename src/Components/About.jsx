@@ -34,11 +34,11 @@ const About = () => {
             </Text>
             <br />
             <Text as="sm" fontSize={["md", "lg", "2xl", "2xl"]} id="user-detail-intro">
-              Currently pursuing a full stack web development corse from Masai
-              Coding School. Now,I'm proficient in web programming languages and frameworks
-              such as html,Css,JavaScript,Reactjs,Nodejs,ChakraUI,MongoDB.
-              I have experience building rich web applications, software from
-              the scratch.
+            Dynamic and enthusiastic SDET fresher for ensuring software
+quality. Seeking a challenging role in a organization where I can
+utilize my knowledge of test automation frameworks to
+contribute to the continuous improvement of software testing
+processes and deliver reliable and efficient software solutions.
             </Text>
                
                <Tabs variant={'unstyled'}  colorScheme='black'>
@@ -50,26 +50,30 @@ const About = () => {
                   <TabPanels>
                     <TabPanel> 
                         <Box>
-                        <Box><Text fontSize='sm' as='em' color='cyan'>Front-End-Development</Text></Box>
+                        <Box><Text fontSize='sm' as='em' color='cyan'>Software Development Engineer In Test</Text></Box>
                            
                             <HStack>
                             <Box><Text fontSize='sm' as='em' color='gray'>HTML |</Text></Box>
                             <Box><Text fontSize='sm' as='em' color='gray'>CSS |</Text></Box>
-                            <Box><Text fontSize='sm' as='em' color='gray'>JavaScript</Text></Box></HStack>
-                            <HStack> <Box><Text fontSize='sm' as='em' color='gray'>React |</Text></Box>
-                            <Box><Text fontSize='sm' as='em' color='gray'>Redux |</Text></Box>
-                            <Box><Text fontSize='sm' as='em' color='gray'>ChakraUI</Text></Box></HStack>
+                            <Box><Text fontSize='sm' as='em' color='gray'>JavaScript |</Text></Box>
+                            <Box><Text fontSize='sm' as='em' color='gray'>Java </Text></Box>
+                            </HStack>
+                            <HStack>
+                            
+                            </HStack>
+                            <HStack> 
+                            <Box><Text fontSize='sm' as='em' color='gray'>Manual Testing |</Text></Box>
+                            <Box><Text fontSize='sm' as='em' color='gray'>Selenium |</Text></Box>
+                            <Box><Text fontSize='sm' as='em' color='gray'>cypress |</Text></Box>
+                            <Box><Text fontSize='sm' as='em' color='gray'>API Testing |</Text></Box>
+                            <Box><Text fontSize='sm' as='em' color='gray'>Postman |</Text></Box>
+                            <Box><Text fontSize='sm' as='em' color='gray'>Mobile App Testing </Text></Box>
+                            
+                            
+                            </HStack>
                            
                             
-                            <Box><Text fontSize='sm' as='em' color='cyan'>Back-End-Development</Text></Box>
 
-                            <HStack>
-                            <Box><Text fontSize='sm' as='em' color='gray'>GitHub |</Text></Box>
-                            <Box><Text fontSize='sm' as='em' color='gray'>NodeJs |</Text></Box>
-                            <Box><Text fontSize='sm' as='em' color='gray'>ExpressJs |</Text></Box>
-                            <Box><Text fontSize='sm' as='em' color='gray'>MongoDb</Text></Box>
-                            </HStack>
-                            
                            
                         </Box>
      
@@ -77,7 +81,7 @@ const About = () => {
                     <TabPanel>
                          <Box>
                              <Box><Text fontSize='sm' as='em' color='cyan'>Full Stack Web Developer</Text></Box>
-                             <Box><Text fontSize='sm' as='em' color='gray'>Masai School, April 2022 -present</Text></Box>
+                             <Box><Text fontSize='sm' as='em' color='gray'>Masai School, April 2022 - Jan 2023</Text></Box>
                            
                             <Box><Text fontSize='sm' as='em' color='cyan'>Bachelor of Technology</Text></Box>
                             <Box><Text fontSize='sm' as='em' color='gray'>Haldia Institute of Technology</Text></Box>

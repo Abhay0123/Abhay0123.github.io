@@ -31,7 +31,7 @@ const Home = () => {
             <Box mt={["12px", "20px", "30px", "40px"]}>
               
               <Text fontSize={["lg", "xl", "2xl", "2xl"]} as="b">
-                Software Engineer By Knowledge
+              Software Development Engineer in Test
               </Text>
             </Box>
             <Box>
@@ -41,11 +41,9 @@ const Home = () => {
                 as="i"
                 fontWeight="400"
               >
-                A methodical and passionate MERN Stack Developer.
+               
                 <br />
-                To take the challenging role as a mern developer and 
-                utilise my skills to deliver top-quality code while helping my
-                team to improve our existing process .
+                Dynamic and enthusiastic SDET. To take the challenging role as an SDET and utilize my skills to create an effective test automation framework.
               </Text>
             </Box>
 
